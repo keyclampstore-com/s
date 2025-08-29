@@ -41,9 +41,6 @@ case $- in
 	  *) return;;
 esac
 . /etc/bashrc
-export HISTCONTROL="ignoreboth"
-export HISTFILESIZE=99999999
-export HISTSIZE=99999999
 export PS1='\[\e[01;33m\]\w\n\[\e[38;5;028m\]\$ \[\e[00m\]'
 eval "$(dircolors)"
 export LS_OPTIONS='--color=auto -h'
