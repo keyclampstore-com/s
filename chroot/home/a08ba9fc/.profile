@@ -23,7 +23,7 @@ if [ -z "$_ENV_SETUP_COMPLETE" ]; then
 		fi
 	}
 	add_to_path "$HOME/.local/bin" 'prepend'
-	add_to_path "$HOME/bin" 'append' # Добавлено из F2
+	add_to_path "$HOME/bin" 'append'
 	add_to_path "/usr/nexkit/bin" 'append'
 	add_to_path "/opt/puppetlabs/bin" 'append'
 	add_to_path "/var/qmail/bin" 'append'
