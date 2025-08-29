@@ -29,6 +29,11 @@ if [ -z "$_ENV_SETUP_COMPLETE" ]; then
 	add_to_path "/var/qmail/bin" 'append'
 	export PATH
 	unset -f add_to_path
+	# 2017-06-09 For mage2pro/core
+	export DF_DEVELOPER=1
+	export EDITOR="vim"
+	export VISUAL="vim"
+	export TERM=xterm-256color
 	export _ENV_SETUP_COMPLETE=1
 fi
 case $- in
@@ -36,4 +41,15 @@ case $- in
 	  *) return;;
 esac
 . /etc/bashrc
+export HISTCONTROL="ignoreboth"
+export HISTFILESIZE=99999999
+export HISTSIZE=99999999
+export PS1='\[\e[01;33m\]\w\n\[\e[38;5;028m\]\$ \[\e[00m\]'
+eval "$(dircolors)"
+export LS_OPTIONS='--color=auto -h'
+alias ls='ls $LS_OPTIONS'
+alias ll='ls $LS_OPTIONS -l'
+alias l='ls $LS_OPTIONS -lA'
+alias ..='cd ..'
+alias ...='cd ../..'
 alias composer="$HOME/.local/bin/composer.phar"
