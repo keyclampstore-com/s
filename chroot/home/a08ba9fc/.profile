@@ -35,9 +35,5 @@ case $- in
 	*i*) ;;
 	  *) return;;
 esac
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
-if [ -f "$HOME/.local/bin/composer.phar" ]; then
-	alias composer="$HOME/.local/bin/composer.phar"
-fi
+. /etc/bashrc
+alias composer="$HOME/.local/bin/composer.phar"
