@@ -1,2 +1,4 @@
 # 2025-08-29 Dmitrii Fediuk https://upwork.com/fl/mage2pro
 /_my
+# 2025-08-30 "Put MariaDB credentals to `~/.my.cnf`": https://github.com/keyclampstore-com/s/issues/1
+/chroot/home/a08ba9fc/.my.cnf
